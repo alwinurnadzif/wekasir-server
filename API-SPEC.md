@@ -1,4 +1,6 @@
-## POST /login
+## AUTH
+
+### POST /login
 
 Request
 
@@ -18,7 +20,9 @@ Response 200
 }
 ```
 
-## GET /products
+## PRODUCTS
+
+### GET /products
 
 request param
 
@@ -44,7 +48,7 @@ Response
 }
 ```
 
-## GET /products/:id
+### GET /products/:id
 
 Response
 
@@ -60,7 +64,7 @@ Response
 }
 ```
 
-## PUT /products/:id/update
+### PUT /products/:id/update
 
 Response
 
