@@ -88,11 +88,11 @@ Response
 
 Request
 
-```
+```json
 {
-    "name": "",
-    "description": "",
-    "qty": "number"
+  "name": "",
+  "description": "",
+  "qty": "number"
 }
 ```
 
@@ -131,11 +131,11 @@ Response
 
 Request
 
-```
+```json
 {
-    "name": "",
-    "description": "",
-    "qty": "number"
+  "name": "",
+  "description": "",
+  "qty": "number"
 }
 ```
 
