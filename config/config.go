@@ -11,3 +11,11 @@ var (
 
 	ProjectRootPath = filepath.Join(filepath.Dir(b), "../")
 )
+
+var Product = struct {
+	TableName string
+	PageName  string
+}{
+	TableName: "products",
+	PageName:  "Products",
+}

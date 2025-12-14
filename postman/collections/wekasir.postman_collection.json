@@ -1,0 +1,473 @@
+{
+  "info": {
+    "_postman_id": "cbe65058-587c-4e2d-844a-dfe870363b56",
+    "name": "wekasir",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "products",
+      "item": [
+        {
+          "name": "get-all",
+          "id": "5ed71fcc-b9ca-43c6-9b14-a91fef3a6250",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/products?paginate=true",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "products"
+              ],
+              "query": [
+                {
+                  "key": "paginate",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "create",
+          "id": "47728ff4-c2a8-4986-a8f1-31b1a89508c6",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "name",
+                  "value": "product 1",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "product 2",
+                  "type": "text"
+                },
+                {
+                  "key": "qty",
+                  "value": "10",
+                  "type": "text"
+                },
+                {
+                  "key": "price",
+                  "value": "20000",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseURL}}/products",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "id": "1bba8895-355e-43e1-b17e-078e3a5de8cb",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "name",
+                  "value": "product 1 update",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "product 2 update",
+                  "type": "text"
+                },
+                {
+                  "key": "qty",
+                  "value": "101",
+                  "type": "text"
+                },
+                {
+                  "key": "price",
+                  "value": "200001",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseURL}}/products/1/update",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "products",
+                "1",
+                "update"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get-by-id",
+          "id": "2d68f292-dbd5-40a5-a85e-af031e5c51c0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "name",
+                  "value": "product 1",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "product 2",
+                  "type": "text"
+                },
+                {
+                  "key": "qty",
+                  "value": "10",
+                  "type": "text"
+                },
+                {
+                  "key": "price",
+                  "value": "20000",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseURL}}/products/1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "products",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "id": "f0669e71-4cce-4212-b113-7083754b43f8",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "name",
+                  "value": "product 1",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "product 2",
+                  "type": "text"
+                },
+                {
+                  "key": "qty",
+                  "value": "10",
+                  "type": "text"
+                },
+                {
+                  "key": "price",
+                  "value": "20000",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseURL}}/products/2/delete",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "products",
+                "2",
+                "delete"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "55220d37-ac67-4ba1-ad58-8d6c7a1f41f2"
+    },
+    {
+      "name": "users",
+      "item": [
+        {
+          "name": "get-all",
+          "id": "d6dc8a8a-4d56-4ebe-94e0-ac6836ebc6ef",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/users?paginate=true",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "users"
+              ],
+              "query": [
+                {
+                  "key": "paginate",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "create",
+          "id": "1efb8bdc-2ebf-4be3-8e23-bfcdaad15bd7",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "name",
+                  "value": "product 1",
+                  "type": "text"
+                },
+                {
+                  "key": "username",
+                  "value": "product 2",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "10000",
+                  "type": "text"
+                },
+                {
+                  "key": "email",
+                  "value": "aa@gmail.com",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseURL}}/users",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "users"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "id": "1d76115f-5f57-48b0-bedd-17c0a92a220d",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "name",
+                  "value": "product 1",
+                  "type": "text"
+                },
+                {
+                  "key": "username",
+                  "value": "product 2",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "10000",
+                  "type": "text"
+                },
+                {
+                  "key": "email",
+                  "value": "aa@gmail.com",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseURL}}/users/2/update",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "users",
+                "2",
+                "update"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get-by-id",
+          "id": "b99461f4-4c3f-497f-9fbb-e471373b8560",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "name",
+                  "value": "product 1",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "product 2",
+                  "type": "text"
+                },
+                {
+                  "key": "qty",
+                  "value": "10",
+                  "type": "text"
+                },
+                {
+                  "key": "price",
+                  "value": "20000",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseURL}}/users/1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "users",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "id": "12a9ba4e-91f0-4a86-9b90-bc157d86b60d",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "name",
+                  "value": "product 1",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "product 2",
+                  "type": "text"
+                },
+                {
+                  "key": "qty",
+                  "value": "10",
+                  "type": "text"
+                },
+                {
+                  "key": "price",
+                  "value": "20000",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseURL}}/users/2/delete",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "users",
+                "2",
+                "delete"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "05a1058c-4029-4054-8a59-8520927c6105"
+    },
+    {
+      "name": "login",
+      "id": "5f33326d-cd1e-4bdc-8b46-32982f9966c1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\": \"root\", \n    \"password\": \"root\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/login",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "login"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJvb3RAcm9vdC5jb20iLCJleHAiOjE3NjU3NzgwNTYsImlkIjoxLCJ1c2VybmFtZSI6InJvb3QifQ.X2Rlx0BFf5wAYOAkKGZixbZ9kokw-LGGbkMhY_Id4ok",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "id": "a00dde30-e8b2-47d1-b220-1714af768164",
+      "key": "baseURL",
+      "value": ""
+    }
+  ]
+}

@@ -30,4 +30,10 @@ func InitRoutes(r *fiber.App) {
 	users.Delete(":id/delete", handler.DeleteUser)
 
 	// products
+	products := requiresAuth.Group("products")
+	products.Get("/", handler.GetAllProducts)
+	products.Post("/", handler.CreateProduct)
+	products.Get(":id", handler.GetProduct)
+	products.Put(":id/update", handler.UpdateProduct)
+	products.Delete(":id/delete", handler.DeleteProduct)
 }

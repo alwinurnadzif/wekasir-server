@@ -30,6 +30,7 @@ func main() {
 	// migration
 	if err := database.DB.AutoMigrate(
 		&entity.User{},
+		&entity.Product{},
 	); err != nil {
 		log.Fatalf("failed run migration: %s", err.Error())
 	}
