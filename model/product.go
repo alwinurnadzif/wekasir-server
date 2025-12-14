@@ -38,3 +38,8 @@ func DeleteProduct(tx *gorm.DB, id string) error {
 	conn := GetConn(tx)
 	return conn.Where("id = ?", id).Delete(&entity.Product{}).Error
 }
+
+func UpdateProducts(tx *gorm.DB, dest *[]entity.Product) error {
+	conn := GetConn(tx)
+	return conn.Save(&dest).Error
+}

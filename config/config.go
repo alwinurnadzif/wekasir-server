@@ -19,3 +19,27 @@ var Product = struct {
 	TableName: "products",
 	PageName:  "Products",
 }
+
+var Customer = struct {
+	TableName string
+	PageName  string
+}{
+	TableName: "customers",
+	PageName:  "Customers",
+}
+
+var Transaction = struct {
+	TableName string
+	PageName  string
+}{
+	TableName: "transactions",
+	PageName:  "Transactions",
+}
+
+var TransactionDetail = struct {
+	TableName string
+	PageName  string
+}{
+	TableName: "transaction_details",
+	PageName:  "Transaction details",
+}

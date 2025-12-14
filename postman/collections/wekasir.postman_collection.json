@@ -426,6 +426,312 @@
       "id": "05a1058c-4029-4054-8a59-8520927c6105"
     },
     {
+      "name": "customers",
+      "item": [
+        {
+          "name": "get-all",
+          "id": "c0eb0924-8ea1-4fa2-9fd8-681d718855e1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/customers?paginate=true",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "customers"
+              ],
+              "query": [
+                {
+                  "key": "paginate",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "create",
+          "id": "0a67ef39-9b5b-4bd2-9cf7-6c400b7234ad",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "name",
+                  "value": "product 1",
+                  "type": "text"
+                },
+                {
+                  "key": "phoneNumber",
+                  "value": " 0324",
+                  "type": "text"
+                },
+                {
+                  "key": "email",
+                  "value": " alwi@a.com",
+                  "type": "text"
+                },
+                {
+                  "key": "address",
+                  "value": " kendal",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseURL}}/customers",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "customers"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "id": "6b9541fd-0f35-4828-ba8b-fd330831d4be",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "name",
+                  "value": "product 1",
+                  "type": "text"
+                },
+                {
+                  "key": "phoneNumber",
+                  "value": " 0324",
+                  "type": "text"
+                },
+                {
+                  "key": "email",
+                  "value": " alwi@a.com",
+                  "type": "text"
+                },
+                {
+                  "key": "address",
+                  "value": " kendal",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseURL}}/customers/1/update",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "customers",
+                "1",
+                "update"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get-by-id",
+          "id": "0d88ce69-0f80-4ec4-a91c-de4d58a4f928",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "name",
+                  "value": "product 1",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "product 2",
+                  "type": "text"
+                },
+                {
+                  "key": "qty",
+                  "value": "10",
+                  "type": "text"
+                },
+                {
+                  "key": "price",
+                  "value": "20000",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseURL}}/customers/1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "customers",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "id": "2670f2cf-4e3b-4914-8a4c-31793fdda765",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "name",
+                  "value": "product 1",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "product 2",
+                  "type": "text"
+                },
+                {
+                  "key": "qty",
+                  "value": "10",
+                  "type": "text"
+                },
+                {
+                  "key": "price",
+                  "value": "20000",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseURL}}/customers/2/delete",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "customers",
+                "2",
+                "delete"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "8c4b7801-82e6-49a7-8342-2251079d1f77"
+    },
+    {
+      "name": "transactions",
+      "item": [
+        {
+          "name": "get-all",
+          "id": "ce27db8f-2c1f-40e3-ba34-59cc8aff648b",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/transactions?paginate=true",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "transactions"
+              ],
+              "query": [
+                {
+                  "key": "paginate",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "create",
+          "id": "38044eba-1f0c-4687-a161-496f7d2b16be",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"customerId\": 1, \n    \"userId\": 1, \n    \"date\": \"2025-12-14T16:30:00Z\",\n    \"paidAmount\": 400000,\n    \"details\": [{\n        \"productId\": 1, \n        \"price\": 30000, \n        \"qty\": 5\n    },{\n        \"productId\": 1, \n        \"price\": 30000, \n        \"qty\": 10\n    }]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/transactions",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "transactions"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get-by-id",
+          "id": "24c5d7e1-cc3d-4b97-bd9b-37d05069a505",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/transactions/8",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "transactions",
+                "8"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "id": "e618d453-e016-4410-b573-05b424a64fd4",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/transactions/8/delete",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "transactions",
+                "8",
+                "delete"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "30270528-f3ce-4ea0-8b4c-0fc834bdd9a5"
+    },
+    {
       "name": "login",
       "id": "5f33326d-cd1e-4bdc-8b46-32982f9966c1",
       "request": {
