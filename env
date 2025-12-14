@@ -1,0 +1,7 @@
+jwt.secret_key=SECRET_TOKEN
+
+database.hostname=localhost
+database.username=
+database.password=
+database.port=5432
+database.database=
